@@ -1,12 +1,27 @@
-### Motivation
-This is a simple implementation of chat application. This utilises websockets in order to maintain 2 way communication.
-This is to understand, how we can utilise redis and websockets to create a small chat application.
+# Simple Chat Application
 
-### Setup need
-This needs `Redis`, which acts as a pub/sub. For testing, I have used `PostMan`.
-I have used client names as `Client-1` and `Client-2`.
-Do not use websocket url as `wss://localhost:8080/server_one/ws/client-1`, as this refers to `secure` websocket connection.
+## Overview
+This project is a simple chat application built using Go. It uses WebSocket for real-time communication and Redis for pub/sub messaging. The application supports multiple clients and channels for message exchange.
 
+## Features
+- Real-time communication using WebSocket.
+- Pub/Sub messaging with Redis.
+- Multi-channel support.
+- REST API for sending messages.
+
+## Project Structure
+- `simple-chat-application/main.go`: Entry point for the chat application.
+- `simple-chat-application/pub_sub/redis.go`: Redis pub/sub implementation.
+
+## Prerequisites
+- Go 1.19 or later
+- Redis server
+
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd <repository-folder>
 
 ### Screenshots
 
